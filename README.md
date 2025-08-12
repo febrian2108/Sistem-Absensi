@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+```
+# 📌 Sistem Absensi
 
-## Getting Started
+**Sistem Absensi** adalah aplikasi berbasis web yang dibuat dengan **Next.js** untuk membantu proses pencatatan dan manajemen kehadiran.  
+Aplikasi ini terintegrasi dengan **Firebase** untuk autentikasi dan penyimpanan data, serta mendukung **Twilio** untuk mengirimkan notifikasi (misalnya SMS) terkait absensi.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+- **Next.js** — Framework React untuk frontend dan backend rendering.
+- **React.js** — Library JavaScript untuk membangun UI interaktif.
+- **Firebase** — Autentikasi pengguna dan database real-time.
+- **Twilio** — Layanan pengiriman pesan (SMS) untuk notifikasi.
+- **Tailwind CSS** — Styling modern dan responsif.
+- **TypeScript** — Memberikan keamanan tipe data dalam pengembangan.
+
+---
+```
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📂 Struktur Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+sistem-absensi/
+│
+├── public/                # Asset publik (gambar, ikon, dll)
+├── src/
+│   ├── app/               # Halaman utama, layout, dan styling global
+│   ├── lib/               # Konfigurasi Firebase
+│   └── middleware.ts      # Middleware untuk proteksi rute
+│
+├── package.json           # Informasi proyek & dependensi
+├── next.config.ts         # Konfigurasi Next.js
+├── tsconfig.json          # Konfigurasi TypeScript
+└── README.md              # Dokumentasi proyek
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+````
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Fitur Utama
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Login & Autentikasi** dengan Firebase Authentication.
+- **Manajemen Absensi** — Pencatatan kehadiran secara real-time.
+- **Notifikasi SMS** menggunakan Twilio API.
+- **Desain Responsif** menggunakan Tailwind CSS.
+- **Proteksi Halaman** dengan middleware.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
+## 🔄 Alur Kerja Aplikasi
 
-## Deploy on Vercel
+1. **Pengguna Login**  
+   Pengguna masuk ke sistem menggunakan email & password yang terdaftar di Firebase Authentication.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Validasi Middleware**  
+   Middleware Next.js memeriksa apakah pengguna sudah login. Jika belum, pengguna diarahkan ke halaman login.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Akses Dashboard**  
+   Setelah login berhasil, pengguna dapat melihat dashboard absensi yang menampilkan daftar kehadiran.
+
+4. **Pencatatan Kehadiran**  
+   Pengguna dapat menandai kehadiran (check-in) atau ketidakhadiran (check-out) yang akan langsung tersimpan di Firebase.
+
+5. **Pengiriman Notifikasi**  
+   Saat absensi dilakukan, sistem dapat mengirimkan SMS notifikasi ke nomor yang telah didaftarkan menggunakan Twilio API.
+
+6. **Logout**  
+   Pengguna dapat keluar dari sistem dengan aman, sesi login akan dihapus.
+
+---
+
+## 📦 Instalasi
+
+```bash
+# Clone repository
+git clone https://github.com/username/sistem-absensi.git
+cd sistem-absensi
+
+# Install dependencies
+npm install
+
+# Jalankan di mode pengembangan
+npm run dev
+
+# Build untuk produksi
+npm run build
+
+# Jalankan di mode produksi
+npm start
+````
+
+---
+
+## 🔑 Konfigurasi Environment
+
+Buat file `.env.local` di root project dan isi dengan konfigurasi berikut:
+
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_firebase_project_id
+TWILIO_ACCOUNT_SID=your_twilio_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_PHONE_NUMBER=your_twilio_phone
+```
+
+---
+
+## 📜 Lisensi
+
+Proyek ini dirilis di bawah lisensi **MIT**.
+Silakan gunakan, modifikasi, dan distribusikan dengan bebas sesuai ketentuan lisensi.
+
+```
+
+Kalau mau lebih profesional, saya bisa tambahkan **diagram flowchart** ke dalam README ini supaya alur sistem absensinya jelas terlihat di GitHub.  
+Mau saya tambahkan diagramnya?
+```
