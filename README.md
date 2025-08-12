@@ -2,8 +2,9 @@
 # 📌 Sistem Absensi
 
 Sistem Absensi adalah aplikasi berbasis web yang dibuat dengan Next.js
-<br> untuk membantu proses pencatatan dan manajemen kehadiran.  
-Aplikasi ini terintegrasi dengan Firebase untuk autentikasi dan penyimpanan data, <br> serta mendukung Twilio untuk mengirimkan notifikasi (misalnya SMS) terkait absensi.
+untuk membantu proses pencatatan dan manajemen kehadiran.  
+Aplikasi ini terintegrasi dengan Firebase untuk autentikasi dan penyimpanan data, 
+serta mendukung Twilio untuk mengirimkan notifikasi (misalnya SMS) terkait absensi.
 
 
 
