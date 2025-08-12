@@ -1,19 +1,19 @@
 ```
 # 📌 Sistem Absensi
 
-**Sistem Absensi** adalah aplikasi berbasis web yang dibuat dengan **Next.js** untuk membantu proses pencatatan dan manajemen kehadiran.  
-Aplikasi ini terintegrasi dengan **Firebase** untuk autentikasi dan penyimpanan data, serta mendukung **Twilio** untuk mengirimkan notifikasi (misalnya SMS) terkait absensi.
+Sistem Absensi adalah aplikasi berbasis web yang dibuat dengan Next.js untuk membantu proses pencatatan dan manajemen kehadiran.  
+Aplikasi ini terintegrasi dengan Firebase untuk autentikasi dan penyimpanan data, serta mendukung Twilio untuk mengirimkan notifikasi (misalnya SMS) terkait absensi.
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Next.js** — Framework React untuk frontend dan backend rendering.
-- **React.js** — Library JavaScript untuk membangun UI interaktif.
-- **Firebase** — Autentikasi pengguna dan database real-time.
-- **Twilio** — Layanan pengiriman pesan (SMS) untuk notifikasi.
-- **Tailwind CSS** — Styling modern dan responsif.
-- **TypeScript** — Memberikan keamanan tipe data dalam pengembangan.
+- Next.js — Framework React untuk frontend dan backend rendering.
+- React.js — Library JavaScript untuk membangun UI interaktif.
+- Firebase — Autentikasi pengguna dan database real-time.
+- Twilio — Layanan pengiriman pesan (SMS) untuk notifikasi.
+- Tailwind CSS — Styling modern dan responsif.
+- TypeScript — Memberikan keamanan tipe data dalam pengembangan.
 
 ---
 ```
@@ -40,11 +40,11 @@ sistem-absensi/
 
 ## ⚙️ Fitur Utama
 
-- **Login & Autentikasi** dengan Firebase Authentication.
-- **Manajemen Absensi** — Pencatatan kehadiran secara real-time.
-- **Notifikasi SMS** menggunakan Twilio API.
-- **Desain Responsif** menggunakan Tailwind CSS.
-- **Proteksi Halaman** dengan middleware.
+- Login & Autentikasi dengan Firebase Authentication.
+- Manajemen Absensi — Pencatatan kehadiran secara real-time.
+- Notifikasi SMS menggunakan Twilio API.
+- Desain Responsif menggunakan Tailwind CSS.
+- Proteksi Halaman dengan middleware.
 
 ---
 ## 🔄 Alur Kerja Aplikasi
