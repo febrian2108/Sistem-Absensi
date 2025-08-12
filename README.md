@@ -74,17 +74,17 @@ sistem-absensi/
 
 ```bash
 # Clone repository
-git clone https://github.com/username/sistem-absensi.git
+git clone https://github.com/febrian2108/sistem-absensi.git
 cd sistem-absensi
 
 # Install dependencies
 npm install
 
-# Jalankan di mode pengembangan
-npm run dev
-
 # Build untuk produksi
 npm run build
+
+# Jalankan di mode pengembangan
+npm run dev
 
 # Jalankan di mode produksi
 npm start
