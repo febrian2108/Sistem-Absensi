@@ -104,16 +104,3 @@ TWILIO_ACCOUNT_SID=your_twilio_sid
 TWILIO_AUTH_TOKEN=your_twilio_auth_token
 TWILIO_PHONE_NUMBER=your_twilio_phone
 ```
-
----
-
-## 📜 Lisensi
-
-Proyek ini dirilis di bawah lisensi **MIT**.
-Silakan gunakan, modifikasi, dan distribusikan dengan bebas sesuai ketentuan lisensi.
-
-```
-
-Kalau mau lebih profesional, saya bisa tambahkan **diagram flowchart** ke dalam README ini supaya alur sistem absensinya jelas terlihat di GitHub.  
-Mau saya tambahkan diagramnya?
-```
