@@ -164,18 +164,6 @@ function Sidebar() {
                         )}
                     </div>
                 ))}
-
-                {/* Sidebar Footer */}
-                <div className="mt-auto px-5">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-                        <p className="text-blue-100 text-xs text-center">
-                            © 2024 SekolahKu
-                        </p>
-                        <p className="text-blue-200 text-xs text-center mt-1">
-                            v1.0.0
-                        </p>
-                    </div>
-                </div>
             </div>
             
             <Modal

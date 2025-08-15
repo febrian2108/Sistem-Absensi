@@ -359,8 +359,8 @@ export default function RegisterStudentPage() {
                                         </h3>
                                         <div className="space-y-3">
                                             {Object.entries(gradeStats).map(([grade, count]) => (
-                                                <div key={grade} className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                                                    <span className="font-medium">Kelas {grade}</span>
+                                                <div key={grade} className="flex justify-between items-center p-3 bg-gray-100 rounded-lg">
+                                                    <span className="font-medium text-gray-500">Kelas {grade}</span>
                                                     <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
                                                         {count} siswa
                                                     </span>

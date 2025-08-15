@@ -1,8 +1,5 @@
 "use client";
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { Logo } from "../assets/icons";
-import { Banner } from "../assets/images";
 import Link from "next/link";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { setCookie } from "cookies-next";

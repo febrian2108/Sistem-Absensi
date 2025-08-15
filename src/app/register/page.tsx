@@ -1,9 +1,6 @@
 "use client";
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { Logo } from "../assets/icons";
 import Link from "next/link";
-import { Banner2 } from "../assets/images";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db } from "@/lib/firebaseClient";
 import { doc, setDoc } from "firebase/firestore";

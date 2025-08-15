@@ -40,10 +40,10 @@ function Header() {
 
     const getGreetingEmoji = () => {
         const hour = currentTime.getHours();
-        if (hour < 12) return '🌅';
-        if (hour < 15) return '☀️';
-        if (hour < 18) return '🌇';
-        return '🌙';
+        if (hour < 12) return '👤';
+        if (hour < 15) return '👤';
+        if (hour < 18) return '👤';
+        return '👤';
     };
 
     if (!mounted) {
@@ -86,7 +86,7 @@ function Header() {
 
                 {/* User Greeting */}
                 <div className="flex items-center gap-3 bg-gradient-to-r from-blue-50 to-purple-50 px-4 py-2 rounded-full border border-blue-100">
-                    <div className="text-xl animate-bounce" style={{ animationDelay: '1s' }}>
+                    <div className="text-xl" style={{ animationDelay: '1s' }}>
                         {getGreetingEmoji()}
                     </div>
                     <div className="flex flex-col">
