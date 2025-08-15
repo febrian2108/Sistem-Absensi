@@ -3,10 +3,10 @@ import "./globals.css";
 import Wrapper from "./components/organisms/wrapper/wrapper";
 
 export const metadata: Metadata = {
-  title: "sekolah.ku",
+  title: "AbsensiKu",
   description: "Online School Management System",
   icons: {
-    icon: "/favicon.png",
+    icon: "/school.png",
   },
 };
 

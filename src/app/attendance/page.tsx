@@ -143,7 +143,7 @@ export default function Attendance() {
             case 'Hadir': return 'from-green-500 to-emerald-600';
             case 'Sakit': return 'from-blue-500 to-cyan-600';
             case 'Ijin Keperluan Pribadi': return 'from-yellow-500 to-amber-600';
-            case 'Alpha': return 'from-red-500 to-rose-600';
+            case 'Alpha': return 'from-gray-400 to-gray-500';
             default: return 'from-gray-500 to-slate-600';
         }
     };
@@ -197,25 +197,6 @@ export default function Attendance() {
                                         </p>
                                     </div>
                                 </div>
-                                
-                                {/* Quick Info */}
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-                                    <div className="glass rounded-xl p-4 text-center hover-lift">
-                                        <div className="text-2xl mb-2">📅</div>
-                                        <div className="text-lg font-bold">Hari Ini</div>
-                                        <div className="text-white/80 text-sm">Real-time Input</div>
-                                    </div>
-                                    <div className="glass rounded-xl p-4 text-center hover-lift">
-                                        <div className="text-2xl mb-2">📱</div>
-                                        <div className="text-lg font-bold">Auto WhatsApp</div>
-                                        <div className="text-white/80 text-sm">Notifikasi Orang Tua</div>
-                                    </div>
-                                    <div className="glass rounded-xl p-4 text-center hover-lift">
-                                        <div className="text-2xl mb-2">💾</div>
-                                        <div className="text-lg font-bold">Cloud Storage</div>
-                                        <div className="text-white/80 text-sm">Data Tersimpan Aman</div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -236,14 +217,13 @@ export default function Attendance() {
                                         {/* Pilih Kelas */}
                                         <div className="space-y-3 animate-fade-in animate-delay-300">
                                             <label htmlFor="grade" className="flex items-center gap-2 text-gray-700 font-semibold text-lg">
-                                                <span className="text-2xl">🏫</span>
                                                 Pilih Kelas
                                             </label>
                                             <select
                                                 required
                                                 value={selectedGrade}
                                                 onChange={(e) => setSelectedGrade(e.target.value)}
-                                                className="input-field text-lg py-4"
+                                                className="input-field text-lg py-4 border-gray-400"
                                             >
                                                 <option value="" disabled>
                                                     Pilih kelas terlebih dahulu...
@@ -357,19 +337,19 @@ export default function Attendance() {
                                         <div className="space-y-3">
                                             <div className="flex justify-between">
                                                 <span className="text-gray-600">Nama:</span>
-                                                <span className="font-semibold">{selectedStudent.name}</span>
+                                                <span className="font-semibold text-gray-600">{selectedStudent.name}</span>
                                             </div>
                                             <div className="flex justify-between">
                                                 <span className="text-gray-600">NIS:</span>
-                                                <span className="font-mono bg-gray-100 px-2 py-1 rounded">{selectedStudent.studentId}</span>
+                                                <span className="font-mono bg-gray-100 px-2 py-1 rounded text-gray-600">{selectedStudent.studentId}</span>
                                             </div>
                                             <div className="flex justify-between">
                                                 <span className="text-gray-600">Kelas:</span>
-                                                <span className="font-semibold">Kelas {selectedStudent.grade}</span>
+                                                <span className="font-semibold text-gray-600">Kelas {selectedStudent.grade}</span>
                                             </div>
                                             <div className="flex justify-between">
                                                 <span className="text-gray-600">No. HP Ortu:</span>
-                                                <span className="font-mono text-sm">{selectedStudent.parentPhone}</span>
+                                                <span className="font-mono text-sm text-gray-600">{selectedStudent.parentPhone}</span>
                                             </div>
                                         </div>
                                     </div>

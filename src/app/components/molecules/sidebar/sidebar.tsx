@@ -100,7 +100,7 @@ function Sidebar() {
 
                 {itemsMenu.map((item, categoryIndex) => (
                     <div 
-                        className="flex flex-col transition-all duration-300" 
+                        className="flex flex-col transition-all duration-300 font-extrabold text-white" 
                         key={item.category}
                         style={{ animationDelay: `${categoryIndex * 0.1}s` }}
                     >

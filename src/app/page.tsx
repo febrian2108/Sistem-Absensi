@@ -87,7 +87,7 @@ export default function Home() {
           </div>
 
           {/* Features Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20 ">
             {features.map((feature, index) => (
               <div 
                 key={index}
@@ -154,7 +154,7 @@ export default function Home() {
             <span className="text-white font-semibold">AbsensiKu</span>
           </div>
           <p className="text-white/70">
-            © 2024 AbsensiKu.
+            © 2025 AbsensiKu.
           </p>
         </div>
       </footer>

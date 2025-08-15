@@ -59,7 +59,7 @@ function Header() {
                     <div className="absolute -top-1 -right-1 w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse"></div>
                 </div>
                 <div className="flex flex-col">
-                    <h1 className="text-2xl font-bold gradient-text">SekolahKu</h1>
+                    <h1 className="text-2xl font-bold gradient-text">Absensi.Ku</h1>
                     <p className="text-xs text-gray-600">Sistem Absensi Digital</p>
                 </div>
             </div>

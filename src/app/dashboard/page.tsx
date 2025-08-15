@@ -98,7 +98,7 @@ export default function AttendanceTablePage() {
     const getStatusIcon = (status: string) => {
         switch (status.toLowerCase()) {
             case 'hadir': return '✅';
-            case 'tidak hadir': return '❌';
+            case 'alpha': return '❌';
             case 'izin': return '📝';
             case 'sakit': return '🏥';
             default: return '❓';
@@ -108,7 +108,7 @@ export default function AttendanceTablePage() {
     const getStatusColor = (status: string) => {
         switch (status.toLowerCase()) {
             case 'hadir': return 'from-green-500 to-emerald-600';
-            case 'tidak hadir': return 'from-red-500 to-rose-600';
+            case 'alpha': return 'from-red-500 to-rose-600';
             case 'izin': return 'from-yellow-500 to-amber-600';
             case 'sakit': return 'from-blue-500 to-cyan-600';
             default: return 'from-gray-500 to-slate-600';
@@ -129,13 +129,13 @@ export default function AttendanceTablePage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-4 md:p-8">
             <div className="max-w-7xl mx-auto space-y-8">
-                
+
                 {/* Header Section */}
                 <div className="relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 rounded-3xl"></div>
                     <div className="absolute top-4 right-4 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
                     <div className="absolute bottom-4 left-4 w-24 h-24 bg-white/5 rounded-full animate-pulse"></div>
-                    
+
                     <div className="relative p-8 md:p-12 text-white animate-fade-in">
                         <div className="flex items-center gap-4 mb-4">
                             <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm animate-glow">
@@ -150,9 +150,9 @@ export default function AttendanceTablePage() {
                                 </p>
                             </div>
                         </div>
-                        
+
                         {/* Quick Stats */}
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                        <div className="grid grid-cols-2 gap-4 mt-8 justify-center">
                             <div className="glass rounded-xl p-4 text-center hover-lift">
                                 <div className="text-2xl mb-2">👥</div>
                                 <div className="text-2xl font-bold">{grades.length}</div>
@@ -163,17 +163,8 @@ export default function AttendanceTablePage() {
                                 <div className="text-2xl font-bold">{new Date().getDate()}</div>
                                 <div className="text-white/80 text-sm">Hari Ini</div>
                             </div>
-                            <div className="glass rounded-xl p-4 text-center hover-lift">
-                                <div className="text-2xl mb-2">📈</div>
-                                <div className="text-2xl font-bold">98%</div>
-                                <div className="text-white/80 text-sm">Kehadiran</div>
-                            </div>
-                            <div className="glass rounded-xl p-4 text-center hover-lift">
-                                <div className="text-2xl mb-2">⚡</div>
-                                <div className="text-2xl font-bold">Real-time</div>
-                                <div className="text-white/80 text-sm">Update</div>
-                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -185,7 +176,7 @@ export default function AttendanceTablePage() {
                         </div>
                         <h2 className="text-2xl font-bold text-gray-800">Filter Data Kehadiran</h2>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
                         <div className="space-y-2">
                             <label className="flex items-center gap-2 text-gray-700 font-semibold text-sm">
@@ -260,7 +251,7 @@ export default function AttendanceTablePage() {
                                     </span>
                                 </div>
                             </div>
-                            
+
                             {attendances.length > 0 && (
                                 <div className="flex items-center gap-2 text-sm text-gray-600 bg-gray-50 px-4 py-2 rounded-lg">
                                     <span>👥</span>
@@ -274,7 +265,7 @@ export default function AttendanceTablePage() {
                                 <div className="text-8xl mb-6 animate-bounce">📭</div>
                                 <h3 className="text-2xl font-bold text-gray-600 mb-4">Data Belum Tersedia</h3>
                                 <p className="text-gray-500 text-lg max-w-md mx-auto leading-relaxed">
-                                    Belum ada data kehadiran untuk tanggal dan kelas yang dipilih. 
+                                    Belum ada data kehadiran untuk tanggal dan kelas yang dipilih.
                                     Silakan pilih tanggal dan kelas lain.
                                 </p>
                             </div>
@@ -282,13 +273,13 @@ export default function AttendanceTablePage() {
                             <div className="space-y-6">
                                 {/* Summary Stats */}
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                                    {['Hadir', 'Tidak Hadir', 'Izin', 'Sakit'].map((status, index) => {
+                                    {['Hadir', 'alpha', 'Izin', 'Sakit'].map((status, index) => {
                                         const count = attendances.filter(a => a.status.toLowerCase() === status.toLowerCase()).length;
                                         const percentage = attendances.length > 0 ? Math.round((count / attendances.length) * 100) : 0;
-                                        
+
                                         return (
-                                            <div 
-                                                key={status} 
+                                            <div
+                                                key={status}
                                                 className="relative overflow-hidden rounded-xl p-6 text-center hover-lift card-interactive"
                                                 style={{ animationDelay: `${index * 0.1}s` }}
                                             >
@@ -337,11 +328,11 @@ export default function AttendanceTablePage() {
                                         </thead>
                                         <tbody>
                                             {attendances.map((attendance, index) => (
-                                                <tr 
-                                                    key={attendance.studentId} 
+                                                <tr
+                                                    key={attendance.studentId}
                                                     className="border-b border-gray-100 hover:bg-gradient-to-r hover:from-blue-50/50 hover:to-purple-50/50 transition-all duration-300"
-                                                    style={{ 
-                                                        animation: `slideInUp 0.6s ease-out ${index * 0.1}s both` 
+                                                    style={{
+                                                        animation: `slideInUp 0.6s ease-out ${index * 0.1}s both`
                                                     }}
                                                 >
                                                     <td className="p-6">

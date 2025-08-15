@@ -130,55 +130,6 @@ function Register() {
                                         Daftarkan sekolah Anda dan rasakan kemudahan mengelola absensi siswa dengan teknologi terdepan yang telah dipercaya ribuan institusi pendidikan.
                                     </p>
                                 </div>
-
-                                {/* Benefits */}
-                                <div className="space-y-4 mt-12 animate-fade-in animate-delay-300">
-                                    <div className="flex items-center gap-4 glass rounded-xl p-4 hover-lift">
-                                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                                            <span className="text-xl">✅</span>
-                                        </div>
-                                        <div>
-                                            <h3 className="text-white font-semibold">Gratis untuk Selamanya</h3>
-                                            <p className="text-white/80 text-sm">Tidak ada biaya tersembunyi</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="flex items-center gap-4 glass rounded-xl p-4 hover-lift">
-                                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                                            <span className="text-xl">⚡</span>
-                                        </div>
-                                        <div>
-                                            <h3 className="text-white font-semibold">Setup dalam 5 Menit</h3>
-                                            <p className="text-white/80 text-sm">Langsung bisa digunakan</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="flex items-center gap-4 glass rounded-xl p-4 hover-lift">
-                                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                                            <span className="text-xl">🛡️</span>
-                                        </div>
-                                        <div>
-                                            <h3 className="text-white font-semibold">Data Aman & Terlindungi</h3>
-                                            <p className="text-white/80 text-sm">Enkripsi tingkat enterprise</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Stats */}
-                                <div className="grid grid-cols-3 gap-4 mt-8 animate-fade-in animate-delay-500">
-                                    <div className="text-center">
-                                        <div className="text-2xl font-bold text-white gradient-text-white">1000+</div>
-                                        <div className="text-white/70 text-xs">Sekolah</div>
-                                    </div>
-                                    <div className="text-center">
-                                        <div className="text-2xl font-bold text-white gradient-text-white">50K+</div>
-                                        <div className="text-white/70 text-xs">Siswa</div>
-                                    </div>
-                                    <div className="text-center">
-                                        <div className="text-2xl font-bold text-white gradient-text-white">99.9%</div>
-                                        <div className="text-white/70 text-xs">Uptime</div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 

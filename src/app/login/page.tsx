@@ -204,30 +204,6 @@ function Login() {
                                         Sistem absensi digital yang memudahkan guru dan siswa dalam mengelola kehadiran dengan teknologi modern dan notifikasi real-time.
                                     </p>
                                 </div>
-
-                                {/* Feature Highlights */}
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12 animate-fade-in animate-delay-300">
-                                    <div className="glass rounded-xl p-6 hover-lift">
-                                        <div className="text-3xl mb-3">⚡</div>
-                                        <h3 className="text-white font-semibold mb-2">Real-time</h3>
-                                        <p className="text-white/80 text-sm">Absensi langsung tersimpan dan terkirim</p>
-                                    </div>
-                                    <div className="glass rounded-xl p-6 hover-lift">
-                                        <div className="text-3xl mb-3">📱</div>
-                                        <h3 className="text-white font-semibold mb-2">Notifikasi</h3>
-                                        <p className="text-white/80 text-sm">WhatsApp otomatis ke orang tua</p>
-                                    </div>
-                                    <div className="glass rounded-xl p-6 hover-lift">
-                                        <div className="text-3xl mb-3">📊</div>
-                                        <h3 className="text-white font-semibold mb-2">Analytics</h3>
-                                        <p className="text-white/80 text-sm">Dashboard lengkap dan laporan</p>
-                                    </div>
-                                    <div className="glass rounded-xl p-6 hover-lift">
-                                        <div className="text-3xl mb-3">🔒</div>
-                                        <h3 className="text-white font-semibold mb-2">Aman</h3>
-                                        <p className="text-white/80 text-sm">Data terenkripsi dan terlindungi</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

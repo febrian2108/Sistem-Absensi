@@ -173,7 +173,7 @@ export default function RegisterStudentPage() {
                                 </div>
                                 
                                 {/* Stats */}
-                                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                                <div className="grid grid-cols-2 gap-4 mt-8 place-content-center">
                                     <div className="glass rounded-xl p-4 text-center hover-lift">
                                         <div className="text-2xl mb-2">👥</div>
                                         <div className="text-2xl font-bold">{students.length}</div>
@@ -183,16 +183,6 @@ export default function RegisterStudentPage() {
                                         <div className="text-2xl mb-2">🏫</div>
                                         <div className="text-2xl font-bold">{Object.keys(gradeStats).length}</div>
                                         <div className="text-white/80 text-sm">Kelas Aktif</div>
-                                    </div>
-                                    <div className="glass rounded-xl p-4 text-center hover-lift">
-                                        <div className="text-2xl mb-2">📱</div>
-                                        <div className="text-2xl font-bold">100%</div>
-                                        <div className="text-white/80 text-sm">Notifikasi</div>
-                                    </div>
-                                    <div className="glass rounded-xl p-4 text-center hover-lift">
-                                        <div className="text-2xl mb-2">🔒</div>
-                                        <div className="text-2xl font-bold">Aman</div>
-                                        <div className="text-white/80 text-sm">Data Terlindungi</div>
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +256,7 @@ export default function RegisterStudentPage() {
                                                         }
                                                     }}
                                                     required
-                                                    className="input-field text-lg py-4 font-mono"
+                                                    className="input-field text-lg py-4 font-mono "
                                                 />
                                                 <p className="text-sm text-gray-500">
                                                     * Harus tepat 5 digit angka
